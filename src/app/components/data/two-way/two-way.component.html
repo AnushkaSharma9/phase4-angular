@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+            <div class="alert alert-success" role="alert">
+                <span [innerText] ="email"></span>
+            </div>
+            <input type="email" id="email" class="form-control" (input)="onInput($event)">
+        </div>
+
+        <!-- [()] = [] + () where [] binds attribute, and () binds an event. -->
+        <div class="col">
+            <div class="alert alert-info" role="alert">
+                 {{message}}
+            </div>
+            <input type="text" id="message" class="form-control" >
+        </div>
+    </div>
+</div>

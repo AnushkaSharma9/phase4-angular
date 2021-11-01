@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Event Binding</h4>
+            <div [class]="product.status ? 'alert alert-success' : 'alert alert-danger' " role="alert">
+                {{product.pid}}  -- {{product.name}}  -- {{product.price}}
+            </div>
+            <button class="btn btn-primary" (click)="onSubmit()">{{ product.status ? 'In Active' : 'Active'}}</button>
+        </div>
+        <div class="col">
+            <input type="email" class="form-control" id="email" (input)="onInput($event)">
+        </div>
+    </div>
+</div>

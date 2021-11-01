@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 [class]="'bg-One'" >Class Binding</h4>
+            <p [class]="'bg-One bg-Two'">{{title}}</p>
+            <p [class]="styleClass.ageClass">{{age}}</p>
+            <p [class]="isMarried ? 'bg-One' : 'bg-Two'">{{isMarried}}</p>
+            <p [class]="isMarried ? 'alert alert-primary' : 'alert alert-warning'">{{username}}</p>
+        </div>
+
+        <div class="col">
+            <h4 [className]="'bg-One'" >Class Binding</h4>
+            <p [className]="'bg-One bg-Two'">{{title}}</p>
+            <p [className]="styleClass.ageClass">{{age}}</p>
+            <p [className]="isMarried ? 'bg-One' : 'bg-Two'">{{isMarried}}</p>
+            <p [className]="isMarried ? 'alert alert-primary' : 'alert alert-warning'">{{username}}</p>
+        </div>
+    </div>
+</div>

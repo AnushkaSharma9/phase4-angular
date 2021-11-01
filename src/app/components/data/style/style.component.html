@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 [style.color]="'brown'" >Style Binding</h4>
+            <p [style.color]="'green'">{{title}}</p>
+            <p [style.color]="colors.blue">{{age}}</p>
+            <p [style.color]="isMarried ? colors.red : colors.green">{{isMarried}}</p>
+            <p [style.font-size.px]="isMarried ? age : '20'"
+            [style.color]="colors.green" [style.font-weight]="'bold'">{{username}}</p>
+        </div>
+    </div>
+</div>
